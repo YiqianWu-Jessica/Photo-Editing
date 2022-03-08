@@ -1,0 +1,235 @@
+=======================================================================================================================================================
+utorID: wuyiqia2
+
+===== Testing compilation and error messages =====
+Test 1: image_editor with no arguments should print usage message:
+Invoking the following command:
+./image_editor >& test1.out
+part1 T1: failed
+
+Test 2: image_editor with more than one arguments should print error message:
+Invoking the following command:
+./image_editor 1 1 >& test2.out
+part1 T2: passed
+
+Test 3: image_editor with one argument equal to 0 should print error message:
+Invoking the following command:
+./image_editor 0 >& test3.out
+part1 T3: passed
+
+Test 4: image_editor with one argument equal to 1a should print error message:
+Invoking the following command:
+./image_editor 1a >& test4.out
+part1 T4: passed
+
+Test 5: Checking for the existence of string manipulation functions:
+part1 T5: passed
+
+Test 6: Checking for incorrect include statements:
+part1 T6: passed
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/basket_70.ppm
+Invoking: head -n 3 Figures_70/basket_70.ppm
+P3
+404 500
+255
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/basket_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/basket_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/basket_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+[ERROR]: The image's output is different than the expected one ...
+[ERROR]: The mismatch token's index: 489652
+[ERROR]: Computed RGB value:
+219
+
+[ERROR]: Expected RGB value:
+EOF
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/big_table_70.ppm
+Invoking: head -n 3 Figures_70/big_table_70.ppm
+P3
+1800 1189
+255
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/big_table_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/big_table_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/big_table_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+[ERROR]: The image's output is different than the expected one ...
+[ERROR]: The mismatch token's index: 4241167
+[ERROR]: Computed RGB value:
+96
+
+[ERROR]: Expected RGB value:
+EOF
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/black_buck_70.ppm
+Invoking: head -n 3 Figures_70/black_buck_70.ppm
+P3
+512 512
+255
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/black_buck_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/black_buck_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/black_buck_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/giraffe_70.ppm
+Invoking: head -n 3 Figures_70/giraffe_70.ppm
+P3
+375 500
+255
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/giraffe_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/giraffe_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/giraffe_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+[ERROR]: The image's output is different than the expected one ...
+[ERROR]: The mismatch token's index: 421879
+[ERROR]: Computed RGB value:
+139
+
+[ERROR]: Expected RGB value:
+EOF
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/small_70.ppm
+Invoking: head -n 3 Figures_70/small_70.ppm
+P3
+4 4
+15
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/small_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/small_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/small_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/table_70.ppm
+Invoking: head -n 3 Figures_70/table_70.ppm
+P3
+500 499
+255
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/table_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/table_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/table_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+[ERROR]: The image's output is different than the expected one ...
+[ERROR]: The mismatch token's index: 747007
+[ERROR]: Computed RGB value:
+121
+
+[ERROR]: Expected RGB value:
+EOF
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Input file: Figures_70/whale_70.ppm
+Invoking: head -n 3 Figures_70/whale_70.ppm
+P3
+250 137
+255
+
+===== Testing removal of red pixels =====
+Invoking: ./image_editor 1 < Figures_70/whale_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing conversion to black and white =====
+Invoking: ./image_editor 2 < Figures_70/whale_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+The generated outputs match!
+
+===== Testing the Instagram function =====
+Invoking: ./image_editor 3 < Figures_70/whale_70.ppm > computedOutput.ppm
+Checking whether the output corresponds to a valid .ppm figure: True
+The generated headers match!
+[ERROR]: The image's output is different than the expected one ...
+[ERROR]: The mismatch token's index: 56311
+[ERROR]: Computed RGB value:
+81
+
+[ERROR]: Expected RGB value:
+EOF
